@@ -32,7 +32,7 @@
                         <div class="col-sm-6 mb-3">
                             <label>Zip Code</label>
                             <div class="input-group">
-                                <input type="text" class="form-control zipCode" placeholder="00000-000" th:field="*{zipCode}" th:classappend="${#fields.hasErrors('zipCode')}? 'is-invalid'">
+                                <input type="text" class="form-control zipCode" placeholder="00-001 / 01001-000" th:field="*{zipCode}" th:classappend="${#fields.hasErrors('zipCode')}? 'is-invalid'">
                                 <button id="search-cep" type="button" class="btn btn-outline-primary">Search</button>
                             </div>
                         </div>

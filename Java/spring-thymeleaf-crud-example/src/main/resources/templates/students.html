@@ -30,15 +30,15 @@
                             <td class="text-center fw-bold" colspan="10">No records found</td>
                         </tr>
                         <tr class="text-center" th:each="student: ${students}">
-                            <td th:utext="${student.name}">Name</td>
-                            <td th:utext="${student.email}">Email</td>
-                            <td th:utext="${student.age}">Age</td>
-                            <td th:utext="${#temporals.format(student.birthday, 'dd/MM/yyyy')}">Birthday</td>
-                            <td th:utext="${student.street}">Street</td>
-                            <td th:utext="${student.district}">District</td>
-                            <td th:utext="${student.city}">City</td>
-                            <td th:utext="${student.state}">State</td>
-                            <td th:utext="${#temporals.format(student.createdAt, 'dd/MM/yyyy HH:mm:ss')}">CreatedAt</td>
+                            <td th:text="${student.name}">Name</td>
+                            <td th:text="${student.email}">Email</td>
+                            <td th:text="${student.age}">Age</td>
+                            <td th:text="${#temporals.format(student.birthday, 'dd/MM/yyyy')}">Birthday</td>
+                            <td th:text="${student.street}">Street</td>
+                            <td th:text="${student.district}">District</td>
+                            <td th:text="${student.city}">City</td>
+                            <td th:text="${student.state}">State</td>
+                            <td th:text="${#temporals.format(student.createdAt, 'dd/MM/yyyy HH:mm:ss')}">CreatedAt</td>
                             <td>
                                 <div class="btn-group">
                                     <a th:href="@{/students/{id}(id=${student.id})}" class="btn btn-sm btn-outline-primary">
